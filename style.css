@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    color: blanchedalmond; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex-direction: row;
+}
+
+.header-right {
+    width: 30vw;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color: #484848;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.fa-airbnb{
+    color: rgb(255, 90, 95);
+    width: 5vw;
+    height: auto;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.content {
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+@media (min-width: 744px){
+    #rooms{
+        margin-left: 8px;
+        margin-right: 8px;
+        height: 5vw;
+        width: 5vw;
+    }
+    img {
+        height: 10vw;
+        width: 10vw;
+        
+    }
+}
