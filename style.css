@@ -11,11 +11,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40vh;
+    flex-wrap: wrap;
+    flex: 1 0 300px;
 }
 
 .header-left {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .header-right {
@@ -23,6 +26,7 @@
     flex-direction: row;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
     justify-content: space-between;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     font-size: 14px;
@@ -64,6 +68,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1 0 375px;
     justify-content: space-around;
 }
 
@@ -75,18 +80,73 @@
 }
 
 #cards>div>p {
-    font-family: "Circular", -apple-system, "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     width: 20vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-/* @media (max-width: 410px){
-   
-    img {
-        height: 10vw;
-        width: 10vw;
-        
+@media (max-width: 375px){
+   body {
+       width: 375px;
+   } 
+
+   .header-right{
+       display: none;
+   }
+
+   .header-left{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       margin-left: 10vw;
+   }
+
+   .header-left>i {
+       margin-right: 10vw;
+   }
+
+   .accommodations {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 100vw;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
-} */
+
+    #cards {
+        width: 80vw;
+        height: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #cards>div{
+        position: initial;
+        width: 80%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 0 375px;
+        justify-content: center;
+    }
+
+    #cards>div>img{
+        height: 200px;
+        width: 100%;
+        padding-right: 10vw;
+        position: relative;
+    }
+
+    #cards>div>p {
+       width: 280px;
+    }
+
+   
+}
